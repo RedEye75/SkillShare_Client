@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import "./App.css";
+import Error from "./components/Error";
 import Home from "./components/Home";
 import Main from "./layout/Main";
 
@@ -16,7 +17,7 @@ function App() {
       ],
     },
 
-    { path: "*", element: <div>no route found</div> },
+    { path: "*", element: <Error></Error> },
   ]);
   return (
     <div className="App">
