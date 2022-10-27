@@ -24,18 +24,18 @@ const Navbar = () => {
             </li>
             <li className="flex">
               <Link
-                to={"/"}
+                to={"/blog"}
                 className="flex  hover:text-rose-700 uppercase font-bold items-center px-4 -mb-1 "
               >
-                Link
+                Blog
               </Link>
             </li>
             <li className="flex">
               <Link
-                to={"/"}
+                to={"/courses"}
                 className="flex  hover:text-rose-700 uppercase font-bold items-center px-4 -mb-1 "
               >
-                Link
+                Courses
               </Link>
             </li>
             <li className="flex">
@@ -43,15 +43,21 @@ const Navbar = () => {
                 to={"/"}
                 className="flex items-center px-4 uppercase -mb-1 hover:text-rose-700 font-bold"
               >
-                Link
+                Faq
               </Link>
             </li>
           </ul>
           <div className="items-center flex-shrink-0 hidden lg:flex">
-            <button className="self-center px-8 py-3 rounded">Sign in</button>
-            <button className="self-center px-8 py-3 font-semibold rounded dark:bg-violet-400 dark:text-gray-900">
-              Sign up
-            </button>
+            <Link to={"/signIn"}>
+              <button className="self-center px-8 py-3 font-semibold rounded dark:bg-violet-400 dark:text-gray-900">
+                Sign In
+              </button>
+            </Link>
+            <Link to={"register"}>
+              <button className="self-center px-8 py-3 font-semibold rounded dark:bg-violet-400 dark:text-gray-900">
+                Register
+              </button>
+            </Link>
           </div>
           <button className="p-4 lg:hidden">
             <svg

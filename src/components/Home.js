@@ -30,8 +30,11 @@ const Home = () => {
                 Get Started
               </Link>
 
-              <Link className="block w-full rounded bg-yellow-500 px-12 py-3 text-sm font-bold text-white shadow hover:bg-cyan-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto">
-                Learn More
+              <Link
+                to={"/blog"}
+                className="block w-full rounded bg-yellow-500 px-12 py-3 text-sm font-bold text-white shadow hover:bg-cyan-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
+              >
+                Blog
               </Link>
             </div>
           </div>

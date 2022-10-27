@@ -1,15 +1,24 @@
 import React from "react";
 import Footer from "../components/Footer";
-import Home from "../components/Home";
 import Navbar from "../components/Navbar";
+import Sidebar from "../components/Sidebar";
+import { Outlet } from "react-router-dom";
 
 const Main = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <Home></Home>
+
+      <div className="grid grid-cols-6">
+        <div className="col-span-1">
+          <Sidebar></Sidebar>
+        </div>
+        <div className="col-span-5">
+          <Outlet></Outlet>
+        </div>
+      </div>
+
       <Footer></Footer>
-      <outlet></outlet>
     </div>
   );
 };
