@@ -40,7 +40,7 @@ const Navbar = () => {
             </li>
             <li className="flex">
               <Link
-                to={"/"}
+                to={"/faq"}
                 className="flex items-center px-4 uppercase -mb-1 hover:text-rose-700 font-bold"
               >
                 Faq

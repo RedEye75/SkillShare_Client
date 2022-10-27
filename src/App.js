@@ -7,6 +7,7 @@ import Courses from "./components/Courses";
 import Error from "./components/Error";
 import Home from "./components/Home";
 import LogIn from "./components/LogIn";
+import Faq from "./components/Faq";
 import Register from "./components/Register";
 import Main from "./layout/Main";
 
@@ -28,6 +29,7 @@ function App() {
           loader: () => fetch("http://localhost:5000/courses"),
           element: <Courses></Courses>,
         },
+        { path: "/faq", element: <Faq></Faq> },
         {
           path: "/courses/:id",
           element: <CourseInfo></CourseInfo>,
