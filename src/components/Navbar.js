@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../contexts/AuthProvider/AuthProvider";
 
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
+
+  const handleLogOut = () => {
+    logOut()
+      .then(() => {})
+      .catch((error) => console.error(error));
+  };
   return (
     <div>
       <header className="p-4  dark:bg-gray-800 dark:text-gray-100">
@@ -52,28 +60,43 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
+
           <div className="items-center gap-5  flex-shrink-0 hidden lg:flex">
-            <Link to={"/signIn"}>
-              <button className="group relative inline-block  overflow-hidden border border-orange-600 px-8 py-3 focus:outline-none focus:ring">
-                <span class="absolute inset-y-0 right-0 w-[2px] bg-orange-600 transition-all group-hover:w-full group-active:bg-orange-500"></span>
-
-                <span class="relative text-sm font-medium text-orange-600 transition-colors group-hover:text-white">
-                  Sign In
-                </span>
-              </button>
-            </Link>
-            <Link to={"/register"}>
+            {user?.uid ? (
               <button
-                className="group relative inline-block overflow-hidden border border-green-600 px-8 py-3 focus:outline-none focus:ring"
-                href="/download"
+                className="group relative inline-block overflow-hidden border border-red-600 px-8 py-3 focus:outline-none focus:ring"
+                onClick={handleLogOut}
+                type="submit"
               >
-                <span class="absolute inset-x-0 top-0 h-[2px] bg-green-400 transition-all group-hover:h-full group-active:bg-green-400"></span>
+                <span className="absolute inset-y-0 left-0 w-[2px] bg-red-600 transition-all group-hover:w-full group-active:bg-indigo-500"></span>
 
-                <span class="relative text-sm font-medium text-green-400 transition-colors group-hover:text-white">
-                  Register
+                <span className="relative text-sm font-medium text-red-600 transition-colors group-hover:text-white">
+                  Logout
                 </span>
               </button>
-            </Link>
+            ) : (
+              <>
+                <Link to={"/signIn"}>
+                  <button className="group relative inline-block  overflow-hidden border border-orange-600 px-8 py-3 focus:outline-none focus:ring">
+                    <span class="absolute inset-y-0 right-0 w-[2px] bg-orange-600 transition-all group-hover:w-full group-active:bg-orange-500"></span>
+
+                    <span class="relative text-sm font-medium text-orange-600 transition-colors group-hover:text-white">
+                      Sign In
+                    </span>
+                  </button>
+                </Link>
+
+                <Link to={"/register"}>
+                  <button className="group relative inline-block overflow-hidden border border-green-600 px-8 py-3 focus:outline-none focus:ring">
+                    <span class="absolute inset-x-0 top-0 h-[2px] bg-green-400 transition-all group-hover:h-full group-active:bg-green-400"></span>
+
+                    <span class="relative text-sm font-medium text-green-400 transition-colors group-hover:text-white">
+                      Register
+                    </span>
+                  </button>
+                </Link>
+              </>
+            )}
           </div>
           <button className="p-4 lg:hidden">
             <svg
