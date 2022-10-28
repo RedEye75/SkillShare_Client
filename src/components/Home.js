@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div>
-      <section className="relative bg-[url(https://img.freepik.com/free-vector/education-horizontal-typography-banner-set-with-learning-knowledge-symbols-flat-illustration_1284-29493.jpg?w=1380&t=st=1666854215~exp=1666854815~hmac=9547b8c2af42abeffd92662d1f0a7647a21821e002a38dbbf25d3532d48ef8ec)] bg-cover bg-center bg-no-repeat mb-10">
+      <section className="relative bg-[url(https://img.freepik.com/free-vector/education-horizontal-typography-banner-set-with-learning-knowledge-symbols-flat-illustration_1284-29493.jpg?w=1380&t=st=1666854215~exp=1666854815~hmac=9547b8c2af42abeffd92662d1f0a7647a21821e002a38dbbf25d3532d48ef8ec)] bg-cover bg-center bg-no-repeat ">
         <div className="absolute inset-0 bg-white/75 sm:bg-transparent sm:bg-gradient-to-r sm:from-white/95 sm:to-white/25"></div>
 
         <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">

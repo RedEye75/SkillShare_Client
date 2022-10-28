@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const LogIn = () => {
   return (
     <div>
-      <div className="w-full max-w-md p-8 space-y-3 ml-96 mt-40  dark:bg-gray-900 dark:text-gray-100">
+      <div className="w-full max-w-md p-8 space-y-3 mx-auto dark:bg-gray-900 dark:text-gray-100">
         <h1 className="text-2xl font-bold text-center">Sign in</h1>
         <form
           novalidate=""
@@ -31,7 +31,7 @@ const LogIn = () => {
               <Link>Forgot Password?</Link>
             </div>
           </div>
-          <button className="block hover:bg-rose-600 w-64 mx-auto p-3 text-center rounded-sm dark:text-gray-900 dark:bg-violet-400">
+          <button className="block w-64 mx-auto hover:bg-rose-600  p-3 text-center rounded-sm dark:text-gray-900 dark:bg-violet-400">
             Sign in
           </button>
           <p className="text-xs text-center sm:px-6 dark:text-gray-400">

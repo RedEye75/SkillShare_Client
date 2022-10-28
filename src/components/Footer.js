@@ -10,13 +10,17 @@ const Footer = () => {
             <div>
               <span class="block h-10 font-serif text-blue-700  w-64 rounded-lg font-bold">
                 SKILLSHARE
-                <p class=" max-w-xs text-sm font-serif text-black">
+                <p class=" max-w-xs text-sm font-serif text-rose-600">
                   Premium learning experience.
                 </p>
               </span>
 
               <div class="mt-8 flex gap-6 text-gray-500">
-                <Link class="hover:opacity-75" target="_blank" rel="noreferrer">
+                <Link
+                  className=" hover:text-rose-500 font-semibold"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <span class="sr-only"> Facebook </span>
 
                   <svg
@@ -33,7 +37,11 @@ const Footer = () => {
                   </svg>
                 </Link>
 
-                <Link class="hover:opacity-75" target="_blank" rel="noreferrer">
+                <Link
+                  className=" hover:text-rose-500 font-semibold"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <span class="sr-only"> Instagram </span>
 
                   <svg
@@ -50,7 +58,11 @@ const Footer = () => {
                   </svg>
                 </Link>
 
-                <Link class="hover:opacity-75" target="_blank" rel="noreferrer">
+                <Link
+                  className=" hover:text-rose-500 font-semibold"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <span class="sr-only"> Twitter </span>
 
                   <svg
@@ -63,7 +75,11 @@ const Footer = () => {
                   </svg>
                 </Link>
 
-                <Link class="hover:opacity-75" target="_blank" rel="noreferrer">
+                <Link
+                  className=" hover:text-rose-500 font-semibold"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <span class="sr-only"> GitHub </span>
 
                   <svg
@@ -80,7 +96,11 @@ const Footer = () => {
                   </svg>
                 </Link>
 
-                <Link class="hover:opacity-75" target="_blank" rel="noreferrer">
+                <Link
+                  className=" hover:text-rose-500 font-semibold"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <span class="sr-only"> Dribbble </span>
 
                   <svg
@@ -101,40 +121,56 @@ const Footer = () => {
 
             <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
               <div>
-                <p class="border-b-2 font-bold font-serif">Company</p>
+                <p class="border-b-2 text-rose-600 font-bold font-serif">
+                  Company
+                </p>
 
                 <nav
                   aria-label="Footer Nav"
                   class="mt-4 flex flex-col space-y-2 text-sm text-gray-500"
                 >
-                  <Link class="hover:opacity-75"> About </Link>
-                  <Link class="hover:opacity-75"> Meet the Team </Link>
-                  <Link class="hover:opacity-75"> History </Link>
-                  <Link class="hover:opacity-75"> Careers </Link>
+                  <Link className=" hover:text-rose-500 font-semibold">
+                    {" "}
+                    About{" "}
+                  </Link>
+                  <Link className=" hover:text-rose-500 font-semibold">
+                    {" "}
+                    Meet the Team{" "}
+                  </Link>
+                  <Link className=" hover:text-rose-500 font-semibold">
+                    {" "}
+                    History{" "}
+                  </Link>
+                  <Link className=" hover:text-rose-500 font-semibold">
+                    {" "}
+                    Careers{" "}
+                  </Link>
                 </nav>
               </div>
 
               <div>
-                <p class="border-b-2 font-bold font-serif">Services</p>
+                <p class="border-b-2 text-rose-600 font-bold font-serif">
+                  Services
+                </p>
 
                 <nav class="mt-4 flex flex-col space-y-2 text-sm text-gray-500">
-                  <Link class="hover:opacity-75" href="">
+                  <Link className=" hover:text-rose-500 font-semibold">
                     {" "}
                     1on1 Coaching{" "}
                   </Link>
-                  <Link class="hover:opacity-75" href="">
+                  <Link className=" hover:text-rose-500 font-semibold">
                     {" "}
                     Company Review{" "}
                   </Link>
-                  <Link class="hover:opacity-75" href="">
+                  <Link className=" hover:text-rose-500 font-semibold">
                     {" "}
                     Accounts Review{" "}
                   </Link>
-                  <Link class="hover:opacity-75" href="">
+                  <Link className=" hover:text-rose-500 font-semibold">
                     {" "}
                     HR Consulting{" "}
                   </Link>
-                  <Link class="hover:opacity-75" href="">
+                  <Link className=" hover:text-rose-500 font-semibold">
                     {" "}
                     SEO Optimisation{" "}
                   </Link>
@@ -142,18 +178,20 @@ const Footer = () => {
               </div>
 
               <div>
-                <p class="border-b-2 font-bold font-serif">Helpful Links</p>
+                <p class="border-b-2 text-rose-600 font-bold font-serif">
+                  Helpful Links
+                </p>
 
                 <nav class="mt-4 flex flex-col space-y-2 text-sm text-gray-500">
-                  <Link class="hover:opacity-75" href="">
+                  <Link className=" hover:text-rose-500 font-semibold">
                     {" "}
                     Contact{" "}
                   </Link>
-                  <Link class="hover:opacity-75" href="">
+                  <Link className=" hover:text-rose-500 font-semibold">
                     {" "}
                     FAQs{" "}
                   </Link>
-                  <Link class="hover:opacity-75" href="">
+                  <Link className=" hover:text-rose-500 font-semibold">
                     {" "}
                     Live Chat{" "}
                   </Link>
@@ -161,22 +199,24 @@ const Footer = () => {
               </div>
 
               <div>
-                <p class="border-b-2 font-bold font-serif">Legal</p>
+                <p class="border-b-2 text-rose-600 font-bold font-serif">
+                  Legal
+                </p>
 
                 <nav class="mt-4 flex flex-col space-y-2 text-sm text-gray-500">
-                  <Link class="hover:opacity-75" href="">
+                  <Link className=" hover:text-rose-500 font-semibold">
                     {" "}
                     Privacy Policy{" "}
                   </Link>
-                  <Link class="hover:opacity-75" href="">
+                  <Link className=" hover:text-rose-500 font-semibold">
                     {" "}
                     Terms & Conditions{" "}
                   </Link>
-                  <Link class="hover:opacity-75" href="">
+                  <Link className=" hover:text-rose-500 font-semibold">
                     {" "}
                     Returns Policy{" "}
                   </Link>
-                  <Link class="hover:opacity-75" href="">
+                  <Link className=" hover:text-rose-500 font-semibold">
                     {" "}
                     Accessibility{" "}
                   </Link>

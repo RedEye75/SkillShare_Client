@@ -3,8 +3,8 @@ import React from "react";
 const h1 = () => {
   return (
     <div>
-      <div className="grid space-y-4   lg:grid-cols-3 px-28 md:grid-cols-2 sm:grid-cols-1 gap-11">
-        <details class="group border-l-4 border-green-500 bg-gray-50 p-6" open>
+      <div className="grid mb-5 space-y-4   lg:grid-cols-3 px-28 md:grid-cols-2 sm:grid-cols-1 gap-11">
+        <details class="group border-l-4 border-green-500 bg-gray-50 p-6">
           <summary class="flex cursor-pointer items-center justify-between">
             <h2 class="text-lg font-medium text-gray-900">
               1. What is online learning like?

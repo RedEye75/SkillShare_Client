@@ -18,8 +18,8 @@ const Register = () => {
   };
   return (
     <div>
-      <div className="w-full max-w-md p-8 space-y-3 ml-96 mt-40 dark:bg-gray-900 dark:text-gray-100">
-        <h1 className="text-2xl font-bold text-center">Register</h1>
+      <div className="w-full max-w-md p-8 space-y-3 mx-auto h-full  dark:bg-blue-200 dark:text-gray-100">
+        <h1 className="text-2xl text-black font-bold text-center">Register</h1>
         <form
           novalidate=""
           action=""
@@ -49,9 +49,7 @@ const Register = () => {
         </form>
         <div className="flex items-center pt-4 space-x-1">
           <div className="flex-1 h-px sm:w-16 dark:bg-gray-700"></div>
-          <p className="px-3 text-sm dark:text-gray-400">
-            Login with social accounts
-          </p>
+          <p className="px-3 text-sm text-black">Login with social accounts</p>
           <div className="flex-1 h-px sm:w-16 dark:bg-gray-700"></div>
         </div>
         <div className="flex justify-center space-x-4">
@@ -60,18 +58,30 @@ const Register = () => {
             aria-label="Log in with Google"
             className="p-3 rounded-sm"
           >
-            <FaGoogle></FaGoogle>
+            <Link
+              className="inline-flex items-center  rounded gap-2 border-[#171515] bg-[#171515] border-2 px-5 py-3 text-sm font-medium text-white transition-colors hover:bg-transparent hover:text-[#171515] focus:outline-none focus:ring active:opacity-75"
+              target="_blank"
+            >
+              Google <FaGoogle></FaGoogle>
+            </Link>
           </button>
 
           <button aria-label="Log in with GitHub" className="p-3 rounded-sm">
-            <FaGithub></FaGithub>
+            <Link
+              className="inline-flex items-center rounded  gap-2 border-2 border-[#171515] bg-[#171515] px-5 py-3 text-sm font-medium text-white transition-colors hover:bg-transparent hover:text-[#171515] focus:outline-none focus:ring active:opacity-75"
+              href="/github"
+              target="_blank"
+            >
+              GitHub
+              <FaGithub></FaGithub>
+            </Link>
           </button>
         </div>
-        <p className="text-xs text-center font-bold sm:px-6 dark:text-gray-400">
+        <p className="text-xs text-center font-bold sm:px-6 text-black">
           Already have an account?
           <Link
             to={"/signIn"}
-            className="underline m-3 font-bold dark:text-gray-100"
+            className="underline m-3 font-bold dark:text-rose-500"
           >
             Sign in
           </Link>

@@ -6,30 +6,29 @@ const CourseInfo = () => {
   console.log(info);
   return (
     <div>
-      <div className="max-w-lg p-4 shadow-md dark:bg-gray-900 dark:text-gray-100">
-        <div className="flex justify-between pb-4 border-bottom"></div>
-        <div className="space-y-4">
-          <div className="space-y-2">
-            <img
-              src="https://source.unsplash.com/random/480x360/?4"
-              alt=""
-              className="block object-cover object-center w-full rounded-md h-72 dark:bg-gray-500"
-            />
-          </div>
-          <div className="space-y-2">
-            <Link className="block">
-              <h3 className="text-xl font-semibold dark:text-violet-400">
-                Facere ipsa nulla corrupti praesentium pariatur architecto
-              </h3>
-            </Link>
-            <p className="leading-snug dark:text-gray-400">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Repellat, excepturi. Lorem ipsum dolor sit amet consectetur,
-              adipisicing elit. Repellat, excepturi.
-            </p>
-          </div>
+      <article class="overflow-hidden w-6/12 mx-auto mt-32 rounded-lg  transition shadow-lg">
+        <img
+          alt="Office"
+          src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+          class="h-56 w-full object-cover"
+        />
+
+        <div class="bg-white p-4 sm:p-6">
+          <Link>
+            <h3 class="mt-0.5 text-lg text-gray-900">
+              How to position your furniture for positivity
+            </h3>
+          </Link>
+
+          <p class="mt-2 text-sm leading-relaxed text-gray-500 line-clamp-3">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+            dolores, possimus pariatur animi temporibus nesciunt praesentium
+            dolore sed nulla ipsum eveniet corporis quidem, mollitia itaque
+            minus soluta, voluptates neque explicabo tempora nisi culpa eius
+            atque dignissimos. Molestias explicabo corporis voluptatem?
+          </p>
         </div>
-      </div>
+      </article>
     </div>
   );
 };

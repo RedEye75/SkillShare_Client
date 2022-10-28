@@ -1,12 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Blog = () => {
   return (
     <div>
-      <div>
-        {" "}
-        <h1>What is Cors ? </h1>
-        <p>
+      <Link className="relative block rounded-sm border-t-4 border-pink-600 p-8 pb-24 shadow-xl">
+        <h3 className="text-4xl font-bold">What is Cors ?</h3>
+        <p className="mt-4 text-lg font-medium text-gray-500">
           Cross-Origin Resource Sharing (CORS) is an HTTP-header based mechanism
           that allows a server to indicate any origins (domain, scheme, or port)
           other than its own from which a browser should permit loading
@@ -14,47 +14,62 @@ const Blog = () => {
           "preflight" request to the server hosting the cross-origin resource,
           in order to check that the server will permit the actual request. In
           that preflight, the browser sends headers that indicate the HTTP
-          method and headers that will be used in the actual request.{" "}
+          method and headers that will be used in the actual request.
         </p>
-      </div>
-      <div>
-        <h1>
+
+        <span className="absolute bottom-8 right-8"></span>
+      </Link>
+      <Link class="relative block rounded-sm border-t-4 border-pink-600 p-8 pb-24 shadow-xl">
+        <h3 class="text-4xl font-bold">
           Why are you using firebase? What other options do you have to
           implement authentication?
-        </h1>
-        <p>
-          <span>
-            {" "}
-            Firebase Authentication provides backend services, easy-to-use SDKs,
-            and ready-made UI libraries to authenticate users to your app. It
-            supports authentication using passwords, phone numbers, popular
-            federated identity providers like Google, Facebook and Twitter, and
-            more.
-          </span>
+        </h3>
+        <p class="mt-4 text-lg font-medium text-gray-500">
+          Firebase helps us develop high-quality apps, grow our user base, and
+          earn more money. Each feature works independently, and they work even
+          better together & that's why i'm using firebase.
         </p>
-      </div>
-      <div>
-        <h1>How does the private route work?</h1>
-        <p>
+        <p className="mt-4 text-lg font-medium text-gray-500">
+          There are many options for implement authentication like{" "}
+          <strong className="text-rose-800">
+            {" "}
+            User Authentication Platforms, StyTCH ,Ory SupaBase, Okta,
+            PingIdentity, KeyCloak, FrontEgg, Auth0, ,Amazon, Cognito, OneLogin.
+          </strong>
+        </p>
+
+        <span className="absolute bottom-8 right-8"></span>
+      </Link>
+      <Link className="relative block rounded-sm border-t-4 border-pink-600 p-8 pb-24 shadow-xl">
+        <h3 class="text-4xl font-bold">How does the private route work?</h3>
+        <p class="mt-4 text-lg font-medium text-gray-500">
           The private route component is similar to the public route, the only
           change is that redirect URL and authenticate condition. If the user is
           not authenticated he will be redirected to the login page and the user
           can only access the authenticated routes If he is authenticated
           (Logged in).
         </p>
-      </div>
-      <div>
-        <h1>What is Node? How does Node work?</h1>
-        <p>
-          Node.js is an open-source, cross-platform JavaScript runtime
-          environment and library for running web applications outside the
-          client's browser. Ryan Dahl developed it in 2009, and its latest
-          iteration, version 15.14, was released in April 2021. Developers use
-          Node.js to create server-side web applications, and it is perfect for
-          data-intensive applications since it uses an asynchronous,
-          event-driven model.
+
+        <span className="absolute bottom-8 right-8"></span>
+      </Link>
+      <Link class="relative block rounded-sm border-t-4 border-pink-600 p-8 pb-24 shadow-xl">
+        <h3 class="text-3xl font-bold">What is Node? How does Node work?</h3>
+        <p className="mt-4 text-lg font-medium text-gray-500">
+          What exactly is a node? A node is a basic unit of a data structure,
+          such as a linked list or tree data structure. Nodes contain data and
+          also may link to other nodes. Links between nodes are often
+          implemented by pointers.
         </p>
-      </div>
+        <p className="mt-4 text-lg font-medium text-gray-500">
+          Node allows developers to write JavaScript code that runs directly in
+          a computer process itself instead of in a browser. Node can,
+          therefore, be used to write server-side applications with access to
+          the operating system, file system, and everything else required to
+          build fully-functional applications.
+        </p>
+
+        <span className="absolute bottom-8 right-8"></span>
+      </Link>
     </div>
   );
 };

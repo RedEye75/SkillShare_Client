@@ -1,4 +1,5 @@
 import React from "react";
+import { HiAcademicCap } from "react-icons/hi";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -11,6 +12,7 @@ const Navbar = () => {
             aria-label="Back to homepage"
             className="flex uppercase font-serif font-extrabold  hover:text-rose-700  text-3xl text-cyan-700 items-center p-2"
           >
+            <HiAcademicCap></HiAcademicCap>
             skill_share
           </Link>
           <ul className="items-stretch hidden space-x-3 lg:flex">
@@ -49,7 +51,7 @@ const Navbar = () => {
           </ul>
           <div className="items-center flex-shrink-0 hidden lg:flex">
             <Link to={"/signIn"}>
-              <button className="self-center px-8 py-3 hover:bg-blue-500 font-bold rounded dark:bg-green-500 dark:text-gray-900">
+              <button className="self-center px-8 py-3 btn  hover:bg-rose-600 font-bold rounded dark:bg-green-500 dark:text-gray-900">
                 Sign In
               </button>
             </Link>
