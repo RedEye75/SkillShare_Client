@@ -27,7 +27,8 @@ function App() {
         },
         {
           path: "/courses",
-          loader: () => fetch("http://localhost:5000/courses"),
+          loader: () =>
+            fetch("https://skill-share-server-eight.vercel.app/courses"),
           element: <Courses></Courses>,
         },
         { path: "/faq", element: <Faq></Faq> },
@@ -39,7 +40,9 @@ function App() {
             </PrivateRoute>
           ),
           loader: ({ params }) =>
-            fetch(`http://localhost:5000/courses/${params.id}`),
+            fetch(
+              `https://skill-share-server-eight.vercel.app/courses/${params.id}`
+            ),
         },
         { path: "/signIn", element: <LogIn></LogIn> },
         { path: "/register", element: <Register></Register> },

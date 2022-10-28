@@ -1,22 +1,40 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { FaGoogle, FaGithub } from "react-icons/fa";
-import { GoogleAuthProvider } from "firebase/auth";
+import { GithubAuthProvider, GoogleAuthProvider } from "firebase/auth";
 import { AuthContext } from "../contexts/AuthProvider/AuthProvider";
 
 const Register = () => {
   const [error, setError] = useState("");
 
-  const { ProviderLogin, updateUserProfile, createUser } =
+  const { ProviderLogin, githubSignInProvider, updateUserProfile, createUser } =
     useContext(AuthContext);
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const from = location.state?.from?.pathname || "/";
+
   const googleProvider = new GoogleAuthProvider();
+  const githubProvider = new GithubAuthProvider();
 
   const googleSignIn = () => {
     ProviderLogin(googleProvider)
       .then((result) => {
         const user = result.user;
         console.log(user);
+        navigate(from, { replace: true });
+      })
+      .catch((error) => console.error(error));
+  };
+
+  const githubSignIn = () => {
+    githubSignInProvider(githubProvider)
+      .then((result) => {
+        const user = result.user;
+
+        console.log(user);
+        navigate(from, { replace: true });
       })
       .catch((error) => console.error(error));
   };
@@ -129,7 +147,11 @@ const Register = () => {
             </Link>
           </button>
 
-          <button aria-label="Log in with GitHub" className="p-3 rounded-sm">
+          <button
+            onClick={githubSignIn}
+            aria-label="Log in with GitHub"
+            className="p-3 rounded-sm"
+          >
             <Link
               className="inline-flex items-center rounded  gap-2 border-2 border-[#171515] bg-[#171515] px-5 py-3 text-sm font-medium text-white transition-colors hover:bg-transparent hover:text-[#171515] focus:outline-none focus:ring active:opacity-75"
               href="/github"
