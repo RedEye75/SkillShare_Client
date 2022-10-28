@@ -10,6 +10,7 @@ import LogIn from "./components/LogIn";
 import Faq from "./components/Faq";
 import Register from "./components/Register";
 import Main from "./layout/Main";
+import PrivateRoute from "./route/PrivateRoute";
 
 function App() {
   const router = createBrowserRouter([
@@ -32,7 +33,11 @@ function App() {
         { path: "/faq", element: <Faq></Faq> },
         {
           path: "/courses/:id",
-          element: <CourseInfo></CourseInfo>,
+          element: (
+            <PrivateRoute>
+              <CourseInfo></CourseInfo>
+            </PrivateRoute>
+          ),
           loader: ({ params }) =>
             fetch(`http://localhost:5000/courses/${params.id}`),
         },

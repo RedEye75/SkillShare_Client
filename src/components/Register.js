@@ -7,7 +7,9 @@ import { AuthContext } from "../contexts/AuthProvider/AuthProvider";
 
 const Register = () => {
   const [error, setError] = useState("");
-  const { ProviderLogin, createUser } = useContext(AuthContext);
+
+  const { ProviderLogin, updateUserProfile, createUser } =
+    useContext(AuthContext);
   const googleProvider = new GoogleAuthProvider();
 
   const googleSignIn = () => {
@@ -35,11 +37,22 @@ const Register = () => {
 
         form.reset();
         setError(" ");
+        handleUpdateUserProfile(name, photoURL);
       })
       .catch((e) => {
         console.log(e);
         setError(e.message);
       });
+  };
+
+  const handleUpdateUserProfile = (name, photoURL) => {
+    const profile = {
+      displayName: name,
+      photoURL: photoURL,
+    };
+    updateUserProfile(profile)
+      .then(() => {})
+      .catch((e) => console.error(e));
   };
 
   return (
