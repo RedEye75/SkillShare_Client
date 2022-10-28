@@ -26,13 +26,16 @@ const Home = () => {
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4 text-center">
-              <Link className="block w-full rounded bg-blue-700 px-12 py-3 text-sm font-bold text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto">
+              <Link
+                to={"/courses"}
+                className="block w-full rounded bg-blue-700 px-12 py-4 text-sm font-bold text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
+              >
                 Get Started
               </Link>
 
               <Link
                 to={"/blog"}
-                className="block w-full rounded bg-yellow-500 px-12 py-3 text-sm font-bold text-white shadow hover:bg-cyan-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
+                className="block w-full rounded bg-yellow-500 px-12 py-4 text-sm font-bold text-white shadow hover:bg-cyan-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
               >
                 Blog
               </Link>

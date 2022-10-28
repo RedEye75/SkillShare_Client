@@ -4,7 +4,7 @@ const h1 = () => {
   return (
     <div>
       <div className="grid mb-5 space-y-4   lg:grid-cols-3 px-28 md:grid-cols-2 sm:grid-cols-1 gap-11">
-        <details class="group border-l-4 border-green-500 bg-gray-50 p-6">
+        <details class="group border-l-4 border-green-500 bg-gray-50 p-6" open>
           <summary class="flex cursor-pointer items-center justify-between">
             <h2 class="text-lg font-medium text-gray-900">
               1. What is online learning like?
@@ -19,6 +19,7 @@ const h1 = () => {
               >
                 <path
                   fill-rule="evenodd"
+                  rel="noreferrer"
                   d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
                   clip-rule="evenodd"
                 />
@@ -26,7 +27,7 @@ const h1 = () => {
             </span>
           </summary>
 
-          <p class="mt-4 leading-relaxed text-gray-700">
+          <p class="mt-4 text-start  leading-relaxed text-gray-700">
             For those who have never encountered online learning, the biggest
             question is often what it is actually like. The caveat, as you know,
             is that online learning comes in several forms. Therefore, this is
@@ -55,6 +56,7 @@ const h1 = () => {
               >
                 <path
                   fill-rule="evenodd"
+                  rel="noreferrer"
                   d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
                   clip-rule="evenodd"
                 />
@@ -62,7 +64,7 @@ const h1 = () => {
             </span>
           </summary>
 
-          <p class="mt-4 leading-relaxed text-gray-700">
+          <p class="mt-4 text-start leading-relaxed text-gray-700">
             This is another common question that people have about online
             courses. There are usually self-paced programs and traditional
             classroom or meeting-style programs available. Today’s world is full
@@ -90,6 +92,7 @@ const h1 = () => {
               >
                 <path
                   fill-rule="evenodd"
+                  rel="noreferrer"
                   d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
                   clip-rule="evenodd"
                 />
@@ -97,7 +100,7 @@ const h1 = () => {
             </span>
           </summary>
 
-          <p class="mt-4 leading-relaxed text-gray-700">
+          <p class="mt-4 text-start leading-relaxed text-gray-700">
             All new learning innovations are met with some degree of scrutiny,
             but skepticism subsides as methods become more mainstream. Such is
             the case for online learning. Studies indicate employers who are
@@ -124,6 +127,7 @@ const h1 = () => {
                 fill="currentColor"
               >
                 <path
+                  rel="noreferrer"
                   fill-rule="evenodd"
                   d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
                   clip-rule="evenodd"
@@ -131,7 +135,7 @@ const h1 = () => {
               </svg>
             </span>
           </summary>
-          <p>
+          <p class="mt-4 text-start leading-relaxed text-gray-700">
             As with traditional colleges, some online schools are considered
             more credible than others. Reputation, post-graduation employment
             statistics, and enrollment numbers are not always reliable

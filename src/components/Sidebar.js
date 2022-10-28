@@ -102,8 +102,8 @@ const Sidebar = () => {
       .catch((error) => console.error(error));
   };
   return (
-    <div className="border-r-4 border-green-400">
-      <div className="border-b-2  border-red-400">
+    <div className="border-r-4 border-rose-900 mt-10 ">
+      <div className="border-b-2  border-red-800">
         {" "}
         {user?.photoURL ? (
           <img
@@ -112,7 +112,9 @@ const Sidebar = () => {
             alt=""
           />
         ) : (
-          <FaUser></FaUser>
+          <h1 className="justify-center">
+            <FaUser></FaUser>
+          </h1>
         )}
         {user?.uid ? (
           <h1 className="font-bold">
@@ -135,12 +137,10 @@ const Sidebar = () => {
                 {courses.map((course) => (
                   <p
                     key={course.id}
-                    className="block text-start rounded-lg px-4 py-4 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+                    className="block text-start px-4 py-4 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
                   >
                     <Link to={`/courses/${course.id}`}>
-                      <button classNameName="p-5 rounded-md px-14 hover:bg-rose-600 bg-white ">
-                        {course.title}
-                      </button>
+                      <button>{course.title}</button>
                     </Link>
                   </p>
                 ))}
@@ -156,9 +156,9 @@ const Sidebar = () => {
                   onClick={handleLogOut}
                   type="submit"
                 >
-                  <span class="absolute inset-y-0 left-0 w-[2px] bg-red-600 transition-all group-hover:w-full group-active:bg-indigo-500"></span>
+                  <span className="absolute inset-y-0 left-0 w-[2px] bg-red-600 transition-all group-hover:w-full group-active:bg-indigo-500"></span>
 
-                  <span class="relative text-sm font-medium text-red-600 transition-colors group-hover:text-white">
+                  <span className="relative text-sm font-medium text-red-600 transition-colors group-hover:text-white">
                     Logout
                   </span>
                 </button>

@@ -19,7 +19,6 @@ const Footer = () => {
                 <Link
                   className=" hover:text-rose-500 font-semibold"
                   target="_blank"
-                  rel="noreferrer"
                 >
                   <span class="sr-only"> Facebook </span>
 
@@ -40,7 +39,6 @@ const Footer = () => {
                 <Link
                   className=" hover:text-rose-500 font-semibold"
                   target="_blank"
-                  rel="noreferrer"
                 >
                   <span class="sr-only"> Instagram </span>
 
@@ -61,7 +59,6 @@ const Footer = () => {
                 <Link
                   className=" hover:text-rose-500 font-semibold"
                   target="_blank"
-                  rel="noreferrer"
                 >
                   <span class="sr-only"> Twitter </span>
 
@@ -78,7 +75,6 @@ const Footer = () => {
                 <Link
                   className=" hover:text-rose-500 font-semibold"
                   target="_blank"
-                  rel="noreferrer"
                 >
                   <span class="sr-only"> GitHub </span>
 
@@ -99,7 +95,6 @@ const Footer = () => {
                 <Link
                   className=" hover:text-rose-500 font-semibold"
                   target="_blank"
-                  rel="noreferrer"
                 >
                   <span class="sr-only"> Dribbble </span>
 

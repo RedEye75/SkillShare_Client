@@ -1,5 +1,4 @@
 import React from "react";
-import { HiAcademicCap } from "react-icons/hi";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -12,7 +11,11 @@ const Navbar = () => {
             aria-label="Back to homepage"
             className="flex uppercase font-serif font-extrabold  hover:text-rose-700  text-3xl text-cyan-700 items-center p-2"
           >
-            <HiAcademicCap></HiAcademicCap>
+            <img
+              className="rounded-full bg-white mr-3 h-10 w-10"
+              src="https://images.vexels.com/media/users/3/224169/isolated/lists/dbfe1f493ad01117fa4ec5ba10150e4d-computer-programming-logo.png"
+              alt=""
+            />
             skill_share
           </Link>
           <ul className="items-stretch hidden space-x-3 lg:flex">
@@ -49,15 +52,26 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
-          <div className="items-center flex-shrink-0 hidden lg:flex">
+          <div className="items-center gap-5  flex-shrink-0 hidden lg:flex">
             <Link to={"/signIn"}>
-              <button className="self-center px-8 py-3 btn  hover:bg-rose-600 font-bold rounded dark:bg-green-500 dark:text-gray-900">
-                Sign In
+              <button className="group relative inline-block  overflow-hidden border border-orange-600 px-8 py-3 focus:outline-none focus:ring">
+                <span class="absolute inset-y-0 right-0 w-[2px] bg-orange-600 transition-all group-hover:w-full group-active:bg-orange-500"></span>
+
+                <span class="relative text-sm font-medium text-orange-600 transition-colors group-hover:text-white">
+                  Sign In
+                </span>
               </button>
             </Link>
-            <Link to={"register"}>
-              <button className="self-center ml-5 hover:bg-rose-500 px-8 py-3 font-semibold rounded dark:bg-cyan-400 dark:text-gray-900">
-                Register
+            <Link to={"/register"}>
+              <button
+                className="group relative inline-block overflow-hidden border border-green-600 px-8 py-3 focus:outline-none focus:ring"
+                href="/download"
+              >
+                <span class="absolute inset-x-0 top-0 h-[2px] bg-green-400 transition-all group-hover:h-full group-active:bg-green-400"></span>
+
+                <span class="relative text-sm font-medium text-green-400 transition-colors group-hover:text-white">
+                  Register
+                </span>
               </button>
             </Link>
           </div>
