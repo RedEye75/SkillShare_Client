@@ -10,7 +10,7 @@ const Main = () => {
       <Navbar></Navbar>
 
       <div className="grid grid-cols-6">
-        <div className="col-span-1">
+        <div className="col-span-1 lg:block md:block hidden">
           <Sidebar></Sidebar>
         </div>
         <div className="col-span-5">

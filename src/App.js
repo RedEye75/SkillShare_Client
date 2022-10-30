@@ -11,6 +11,7 @@ import Faq from "./components/Faq";
 import Register from "./components/Register";
 import Main from "./layout/Main";
 import PrivateRoute from "./route/PrivateRoute";
+import BuyCourse from "./components/BuyCourse/BuyCourse";
 
 function App() {
   const router = createBrowserRouter([
@@ -43,6 +44,15 @@ function App() {
             fetch(
               `https://skill-share-server-eight.vercel.app/courses/${params.id}`
             ),
+        },
+        {
+          path: "/buyCourse/:id",
+          element: <BuyCourse></BuyCourse>,
+          loader: ({ params }) => {
+            fetch(
+              `https://skill-share-server-eight.vercel.app/courses/buyCourse/${params.id}`
+            );
+          },
         },
         { path: "/signIn", element: <LogIn></LogIn> },
         { path: "/register", element: <Register></Register> },

@@ -8,7 +8,7 @@ const Footer = () => {
         <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
           <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div>
-              <span class="block h-10 font-serif text-blue-700  w-64 rounded-lg font-bold">
+              <span class="block h-10  font-serif text-blue-700  w-64 rounded-lg font-bold">
                 SKILLSHARE
                 <p class=" max-w-xs text-sm font-serif text-rose-600">
                   Premium learning experience.

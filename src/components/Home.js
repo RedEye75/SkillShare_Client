@@ -28,16 +28,39 @@ const Home = () => {
             <div className="mt-8 flex flex-wrap gap-4 text-center">
               <Link
                 to={"/courses"}
-                className="block w-full rounded bg-blue-700 px-12 py-4 text-sm font-bold text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
+                className="group relative inline-flex items-center overflow-hidden rounded border border-current px-8 py-3 text-rose-700 focus:outline-none focus:ring active:text-rose-700"
               >
-                Get Started
+                <span class="absolute left-0 -translate-x-full transition-transform group-hover:translate-x-4">
+                  <svg
+                    class="h-5 w-5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </span>
+
+                <span class="text-sm font-bold transition-all group-hover:ml-4">
+                  Get Started
+                </span>
               </Link>
 
               <Link
                 to={"/blog"}
-                className="block w-full rounded bg-yellow-500 px-12 py-4 text-sm font-bold text-white shadow hover:bg-cyan-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
+                className="group flex items-center px-12  justify-between  border rounded
+                border-rose-600 bg-rose-600  py-3 transition-colors
+                hover:bg-transparent focus:outline-none focus:ring"
               >
-                Blog
+                <span class="font-medium text-white transition-colors group-hover:text-rose-600 ">
+                  Blog
+                </span>
               </Link>
             </div>
           </div>

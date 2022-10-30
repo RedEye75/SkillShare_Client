@@ -48,7 +48,7 @@ const LogIn = () => {
               type="text"
               name="email"
               id="username"
-              placeholder="Username"
+              placeholder="Your Email"
               className="w-full px-4 py-4 rounded-lg bg-gray-200 text-black  border-violet-400"
             />
           </div>
@@ -57,7 +57,7 @@ const LogIn = () => {
               type="password"
               name="password"
               id="password"
-              placeholder="Password"
+              placeholder="Your Password"
               className="w-full px-4 py-4 rounded-lg bg-gray-200 text-black  border-violet-400"
             />
             <div className="flex justify-end text-xs dark:text-gray-400">

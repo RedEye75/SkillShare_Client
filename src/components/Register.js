@@ -79,8 +79,6 @@ const Register = () => {
         <h1 className="text-2xl text-black font-bold text-center">Register</h1>
         <form
           onSubmit={handleSubmit}
-          novalidate=""
-          action=""
           className="space-y-6 ng-untouched  ng-pristine ng-valid"
         >
           <div className="space-y-1 text-sm">
@@ -128,6 +126,7 @@ const Register = () => {
             Register
           </button>
         </form>
+
         <div className="flex items-center pt-4 space-x-1">
           <div className="flex-1 h-px sm:w-16 dark:bg-gray-700"></div>
           <p className="px-3 text-sm text-black">Login with social accounts</p>
