@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import React, { useContext } from "react";
 import { AuthContext } from "../contexts/AuthProvider/AuthProvider";
 
-export default function StackedLightHeaderandFooter() {
+export default function Navbar() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   const { user, logOut } = useContext(AuthContext);
@@ -74,6 +74,21 @@ export default function StackedLightHeaderandFooter() {
                   >
                     <span>FAQ</span>
                   </Link>
+
+                  <label
+                    for="AcceptConditions"
+                    class="relative h-8 w-14 cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      id="AcceptConditions"
+                      class="peer sr-only"
+                    />
+
+                    <span class="absolute inset-0 rounded-full bg-gray-300 transition peer-checked:bg-green-500"></span>
+
+                    <span class="absolute inset-0 m-1 h-6 w-6 rounded-full bg-white transition peer-checked:translate-x-6"></span>
+                  </label>
 
                   <div className="items-center gap-5  flex-shrink-0 hidden lg:flex">
                     {user?.uid ? (
